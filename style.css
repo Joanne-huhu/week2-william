@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: "Bruno Ace SC",serif;
 	line-height: 1;
 }
 ol, ul {
@@ -50,30 +51,107 @@ table {
 *,*:before,*:after{
     box-sizing: border-box;
 }
-/*body{
-
-}*/
+body{
+line-height: 1.5;
+}
 img{
     height: auto;
     max-width: 100%;
+	vertical-align: middle;
 }
 a{
-    display: block;
+    display: inline-block;
     text-decoration: none;
+	color:inherit;
 }
+
+/*layout*/
+.header{
+	background: #000;
+	color: #D1D1D1;	
+	padding: 40px 0;
+}
+.nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*component*/
+.btn{
+	padding: 12px 24px;
+	border-radius: 32px;
+}
+.btn-light{
+	background: #ffffff;
+	color: #000;
+}
+/*page*/
+.banner{
+	background: #000;
+	color: #ffffff;
+}
+.banner-title-strong{
+	display: block;
+	text-align: right;
+}
+.intro{
+	background-image: url("img/background-img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	padding: 160px 0;
+}
+.intro-desc{
+	width: 526px;
+}
+.about{
+	padding: 160px 0;
+}
+.about-list{
+	width: 526px;
+}
+.about-desc{
+	width: 636px;
+}
+/*utils*/
 .container{
-    width: 1296px;
-    margin: 0 auto;
+	width: 1296px;
+	margin: 0 auto;
+}
+.h1{
+	font-size: 128px;
+}
+.h2{
+	font-size: 64px;
+}
+.fs-1{
+	font-size: 32px;
+}
+.fs-2{
+	font-size: 24px;
+}
+.fs-3{
+	font-size: 20px;
+}
+.text-primary{
+	color: #00FFA3;
+}
+.mr-6{
+margin-right: 24px;
 }
 .d-flex{
-    display: flex;
+	display: flex;	
 }
-.j-between{
-    justify-content: space-between;
+.justify-content-end{
+justify-content: flex-end;
 }
-.bg-black{
-background: #000;
+.justify-content-between{
+	justify-content: space-between;
+	}
+.align-items-center{
+	align-items: center;
 }
-.text-color{
-    color: white;
+.flex-wrap{
+	flex-wrap: wrap;
 }
