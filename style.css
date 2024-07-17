@@ -81,16 +81,23 @@ a{
 /*component*/
 .btn{
 	padding: 12px 24px;
-	border-radius: 32px;
+	border-radius: 32px;	
 }
+
 .btn-light{
 	background: #ffffff;
 	color: #000;
+}
+.btn-light:hover{
+	background: #00FFA3;
 }
 .btn-dark{
 	background: #000;
 	color: #ffffff;
 }
+.btn-dark:hover{
+	background: #00FFA3;
+		}
 /*page*/
 .banner{
 	background: #000;
